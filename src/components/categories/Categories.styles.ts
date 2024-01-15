@@ -4,13 +4,14 @@ export const StyledCategories = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  background-color: inherit;
   gap: .5rem;
   position: relative;
   padding-bottom: .6rem;
   z-index: 100;
   padding-right: 10rem;
-`
+`;
 
 export const CategoryItem = styled.div<{ active: boolean }>`
 	background-color: ${({ theme: { divider, text }, active }) =>
